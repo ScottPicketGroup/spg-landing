@@ -1,29 +1,123 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import styled from 'styled-components'
+import SignUp from "../components/landing/signUp"
+import Subscribe from "../components/email-subscription/subscribe"
+import scott from '../images/scott.png'
+import scottMob from '../images/scottMob.png'
 
-import Layout from "../components/layout"
 import Seo from "../components/seo"
-
+import {GlobalStyle} from '../components/styled-components/Theme'
+import SPGLogo from "../images/spg-logo"
+import Instagram from "../components/email-subscription/Instagram"
+import Facebook from "../components/email-subscription/Facebook"
 const IndexPage = () => (
-  <Layout>
-    <Seo title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["AUTO", "WEBP", "AVIF"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
-    <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-    </p>
-  </Layout>
+  <React.Fragment>
+  <GlobalStyle />
+    <Seo title="Scott Picket Group Landing Page" />
+  <PageContainer>
+    <LeftContainer>
+    <SignupContainer>
+      <SignUp/>
+      <Subscribe/>
+  
+    </SignupContainer>
+    <LogoContainer>
+    <SPGLogo/>
+    <SocialsContainer>
+    <Instagram/>
+              <Facebook/>
+    </SocialsContainer>
+    </LogoContainer>
+   
+    </LeftContainer>
+    <ImgContainer>
+    <ImgDesktop>
+   <img src={scott} alt="scotty" style={{marginBottom: `0`}}/>
+   </ImgDesktop>
+   <ImgMob>
+   <img src={scottMob} alt="scotty" />
+   </ImgMob>
+    </ImgContainer>
+  </PageContainer>
+  </React.Fragment>
 )
 
 export default IndexPage
+
+const PageContainer = styled.div`
+height: 100vh;
+width: 99vw;
+
+padding: 0 0 0 84px;
+display: flex;
+justify-content: space-between;
+@media screen and (max-width: 450px) {
+flex-direction: column;
+padding: 0;
+}
+`
+
+const LeftContainer = styled.div`
+height: auto;
+padding-bottom: 66px;
+width: 48%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
+@media screen and (max-width: 450px) {
+  order: 1;
+width: 100%;
+padding: 0 1rem 3rem 1rem;
+height: 100vh;
+}
+`
+
+const SignupContainer = styled.div`
+width: 88%;
+height: auto;
+@media screen and (max-width: 450px) {
+width: 100%;
+}
+`
+
+
+const ImgContainer = styled.div`
+
+width: 52%;
+@media screen and (max-width: 450px) {
+width: 100vw;
+z-index: 10;
+}
+`
+
+const ImgDesktop = styled.div`
+
+@media screen and (max-width: 450px) {
+display: none;
+
+}
+`
+
+const ImgMob = styled.div`
+height: 25rem;
+@media screen and (min-width: 451px) {
+display: none;
+
+}
+`
+
+const LogoContainer = styled.div`
+display: flex;
+justify-content: space-between;
+`
+
+const SocialsContainer = styled.div`
+display: flex;
+align-self: flex-end;
+/* margin-bottom: -.4rem; */
+
+@media screen and (min-width: 451px) {
+display: none;
+}
+`
