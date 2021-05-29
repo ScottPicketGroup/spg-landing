@@ -88,6 +88,7 @@ const ImgContainer = styled.div`
 width: 52%;
 @media screen and (max-width: 450px) {
 width: 100vw;
+max-height: 30vh;
 z-index: 10;
 }
 `
