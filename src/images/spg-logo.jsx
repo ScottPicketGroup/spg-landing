@@ -52,7 +52,7 @@ const SPGLogo = () => {
 export default SPGLogo
 
 const SVG = styled.svg`
-height: 5.5rem;
+height: 3.75rem;
 
 @media screen and (max-width: 450px) {
 max-width: 12rem;

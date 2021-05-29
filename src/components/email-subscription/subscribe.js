@@ -172,11 +172,11 @@ const Input = styled.input`
 const SignUpSubmit = styled.button`
   background: none;
 
-  padding: 0.4rem 4.5rem;
+  padding: 0.45rem 4.5rem;
   border: 1px solid ${props => (props.err ? "#CB0000" : "#153e35")};
   color: ${props => (props.err ? "#CB0000" : "#153e35")};
   margin-top: 2.6rem;
-  font-size: .75rem;
+  font-size: .85rem;
   transition: all 0.2s ease;
   :hover {
     opacity: ${props => (props.err ? "1" : ".75")};
