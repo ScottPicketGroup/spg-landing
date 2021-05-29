@@ -79,6 +79,7 @@ const SignupContainer = styled.div`
   height: auto;
   @media screen and (max-width: 450px) {
     padding: 1rem;
+    width: 100%;
   }
 `
 
