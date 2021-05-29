@@ -72,7 +72,7 @@ justify-content: space-between;
   order: 1;
 width: 100vw;
 padding: 0 1rem 3rem 1rem;
-height: 75vh;
+
 
 }
 `
