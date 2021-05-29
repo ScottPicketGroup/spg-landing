@@ -26,7 +26,7 @@ export const GlobalStyle = createGlobalStyle`
   h1 {
       font-family: Times;
       font-weight: bold;
-      font-size: 70px;
+      font-size: 52px;
       line-height: .94;
       color: #333333;
    
@@ -35,7 +35,7 @@ export const GlobalStyle = createGlobalStyle`
   p {
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-weight: 300;
-      font-size: 42px;
+      font-size: 32px;
       line-height: 1.22;
       color: #333333;
       margin-bottom: 0;
