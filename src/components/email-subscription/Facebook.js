@@ -35,7 +35,9 @@ const Facebook = ({menu}) => {
 export default Facebook
 
 export const SocialsLink = styled.a`
-transform: scale(1.1);
+height: 2.75rem;
+width: 2.75rem;
+
 svg {
   fill: #153e35;
   @media screen and (max-width: 450px) {

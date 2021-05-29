@@ -100,7 +100,7 @@ display: none;
 `
 
 const ImgMob = styled.div`
-height: 25rem;
+
 @media screen and (min-width: 451px) {
 display: none;
 

@@ -18,8 +18,7 @@ const Instagram = ({menu}) => {
       <svg
         id="CL_LS_IG_Static"
         xmlns="http://www.w3.org/2000/svg"
-        width="42"
-        height="42"
+        
         viewBox="0 0 42 42"
       >
         <path
@@ -52,7 +51,10 @@ const Instagram = ({menu}) => {
 export default Instagram
 
 export const SocialsLink = styled.a`
+margin-right: .5rem;
 svg {
+  height: 2.75rem;
+width: 2.75rem;
   fill: #153e35;
   @media screen and (max-width: 450px) {
   fill: ${props => props.menu ? "#FDF9EE" : ""};

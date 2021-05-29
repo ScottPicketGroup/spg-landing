@@ -20,7 +20,7 @@ export const GlobalStyle = createGlobalStyle`
     }
   body {
     color: #333333;
-    
+    background: #F9F9F4;
 
   }
   h1 {

@@ -127,7 +127,7 @@ const Label = styled.p`
   }
 `
 const Input = styled.input`
-  width: 95%;
+  width: 100%;
   height: 3.1rem;
   background: transparent;
   border: none;
