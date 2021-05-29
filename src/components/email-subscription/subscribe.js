@@ -134,7 +134,7 @@ const Input = styled.input`
   
   font-size: 1rem;
   line-height: none;
-  border-bottom: .122em solid ${props => (props.err ? "#CB0000" : "#153e35")};
+  border-bottom: 1px solid ${props => (props.err ? "#CB0000" : "#153e35")};
 
   @media screen and (max-width: 450px) {
     height: 3.3rem;
