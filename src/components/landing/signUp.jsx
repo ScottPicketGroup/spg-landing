@@ -12,8 +12,8 @@ const SignUp = () => {
 export default SignUp
 
 const SignUpContainer = styled.div`
-margin-bottom: 1.75rem;
-margin-top: 90px;
+/* margin-bottom: 1.75rem; */
+margin-top: 74px;
 @media screen and (max-width: 450px) {
 margin-top: 52px;
 margin-bottom: 1.15rem;
@@ -22,7 +22,7 @@ margin-bottom: 1.15rem;
 `
 
 const Heading = styled.h1`
-margin-bottom: 58px;
+margin-bottom: 43px;
 @media screen and (max-width: 450px) {
 margin-bottom: 18px;
 }
