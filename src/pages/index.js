@@ -4,7 +4,7 @@ import SignUp from "../components/landing/signUp"
 import Subscribe from "../components/email-subscription/subscribe"
 import scott from '../images/scott.png'
 import scottMob from '../images/scottMob.png'
-
+import Img from 'gatsby-image'
 import Seo from "../components/seo"
 import {GlobalStyle} from '../components/styled-components/Theme'
 import SPGLogo from "../images/spg-logo"
@@ -32,7 +32,7 @@ const IndexPage = () => (
     </LeftContainer>
     <ImgContainer>
     <ImgDesktop>
-   <img src={scott} alt="scotty" style={{marginBottom: `0`}}/>
+   <Img src={scott} alt="scotty"  style={{marginBottom: `0`}}/>
    </ImgDesktop>
    <ImgMob>
    <img src={scottMob} alt="scotty" />
@@ -92,7 +92,10 @@ z-index: 10;
 `
 
 const ImgDesktop = styled.div`
-
+img {
+  max-width: 100%;
+max-height: 100%;
+}
 @media screen and (max-width: 450px) {
 display: none;
 
