@@ -35,7 +35,7 @@ const IndexPage = () => (
    <img src={scott} alt="scotty"  style={{marginBottom: `0`}}/>
    </ImgDesktop>
    <ImgMob>
-   <img src={scottMob} alt="scotty" style={{maxHeight: `25ren`, minWidth: `100vw`}}/>
+   <img src={scottMob} alt="scotty" style={{maxHeight: `25ren`, maxWidth: `100vw`}}/>
    </ImgMob>
     </ImgContainer>
   </PageContainer>
