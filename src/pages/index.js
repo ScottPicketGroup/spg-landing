@@ -56,7 +56,7 @@ justify-content: space-between;
 flex-direction: column;
 padding: 0;
 width: 100vw;
-justify-content: center;
+justify-content: flex-start;
 }
 `
 
