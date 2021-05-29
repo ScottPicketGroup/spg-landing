@@ -187,7 +187,7 @@ const SignUpSubmit = styled.button`
     font-size: 1rem !important;
     padding: 0.5rem 2.2rem;
     margin-top: 1.75rem;
-    margin-bottom: 1.75rem;
+    margin-bottom: 2.25rem;
   }
   p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
