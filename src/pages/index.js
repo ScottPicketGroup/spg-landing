@@ -56,6 +56,7 @@ justify-content: space-between;
 flex-direction: column;
 padding: 0;
 width: 100vw;
+justify-content: center;
 }
 `
 
@@ -71,7 +72,8 @@ justify-content: space-between;
 @media  (max-width: 450px) {
   order: 1;
 width: 100vw;
-padding: 0 1rem 3rem 1rem;
+padding: 1rem;
+
 
 
 }
