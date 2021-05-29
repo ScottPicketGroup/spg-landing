@@ -48,7 +48,7 @@ const PageContainer = styled.div`
 height: 100vh;
 width: 99vw;
 overflow: hidden;
-padding: 0 0 0 84px;
+padding: 0 ;
 display: flex;
 justify-content: space-between;
 @media screen and (max-width: 450px) {
@@ -60,6 +60,7 @@ padding: 0;
 const LeftContainer = styled.div`
 height: auto;
 padding-bottom: 66px;
+padding-left: 84px;
 width: 48%;
 display: flex;
 flex-direction: column;
