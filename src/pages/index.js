@@ -71,7 +71,7 @@ justify-content: space-between;
 
 @media  (max-width: 450px) {
   order: 1;
-width: 15vw;
+width: 100vw;
 padding: 1rem;
 
 
