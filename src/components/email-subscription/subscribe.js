@@ -118,7 +118,7 @@ const SignUp = styled.div`
   font-size: 0.75rem;
 `
 const Label = styled.p`
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   
 
   @media screen and (max-width: 450px) {
@@ -131,7 +131,7 @@ const Input = styled.input`
   height: 3.1rem;
   background: transparent;
   border: none;
-  
+  margin-top: -.5rem;
   font-size: 1rem;
   line-height: none;
   border-bottom: 1px solid ${props => (props.err ? "#CB0000" : "#153e35")};
@@ -142,7 +142,7 @@ const Input = styled.input`
 
   ::placeholder {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
    
     color: ${props => props.err ? '#CB0000' : 'rgba(21, 62, 53, 50%)'};
     @media screen and (max-width: 450px) {
@@ -172,11 +172,11 @@ const Input = styled.input`
 const SignUpSubmit = styled.button`
   background: none;
 
-  padding: 0.7rem 5rem;
+  padding: 0.4rem 4,5rem;
   border: 1px solid ${props => (props.err ? "#CB0000" : "#153e35")};
   color: ${props => (props.err ? "#CB0000" : "#153e35")};
   margin-top: 2.6rem;
-  font-size: 1.1rem;
+  font-size: .75rem;
   transition: all 0.2s ease;
   :hover {
     opacity: ${props => (props.err ? "1" : ".75")};

@@ -36,7 +36,7 @@ export const GlobalStyle = createGlobalStyle`
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-weight: 300;
       font-size: 32px;
-      line-height: 1.22;
+      line-height: 1.2;
       color: #333333;
       margin-bottom: 0;
   }
