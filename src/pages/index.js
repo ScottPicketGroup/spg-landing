@@ -66,7 +66,7 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
 
-@media screen and (max-width: 450px) {
+@media  (max-width: 450px) {
   order: 1;
 width: 100%;
 padding: 0 1rem 3rem 1rem;
