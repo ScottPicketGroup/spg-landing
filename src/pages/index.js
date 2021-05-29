@@ -83,7 +83,8 @@ const SignupContainer = styled.div`
 width: 88%;
 height: auto;
 @media screen and (max-width: 450px) {
-width: 100%;
+width: 100vw;
+padding: 0;
 }
 `
 
