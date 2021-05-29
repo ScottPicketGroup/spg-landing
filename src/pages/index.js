@@ -35,7 +35,7 @@ const IndexPage = () => (
    <img src={scott} alt="scotty"  style={{marginBottom: `0`}}/>
    </ImgDesktop>
    <ImgMob>
-   <img src={scottMob} alt="scotty" style={{maxHeight: `25vh`, width: `100vw`}}/>
+   <img src={scottMob} alt="scotty" style={{width: `100vw`}}/>
    </ImgMob>
     </ImgContainer>
   </PageContainer>
@@ -45,7 +45,8 @@ const IndexPage = () => (
 export default IndexPage
 
 const PageContainer = styled.div`
-height: 100vh;
+min-height: 100vh;
+max-height: 100vh;
 width: 99vw;
 overflow: hidden;
 padding: 0 ;
