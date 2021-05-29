@@ -119,7 +119,7 @@ const SignUp = styled.div`
 `
 const Label = styled.p`
   font-size: 1.4rem;
-  font-weight: 400;
+  
 
   @media screen and (max-width: 450px) {
     font-size: .9rem !important;
