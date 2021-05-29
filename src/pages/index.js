@@ -32,7 +32,7 @@ const IndexPage = () => (
     </LeftContainer>
     <ImgContainer>
     <ImgDesktop>
-   <Img src={scott} alt="scotty"  style={{marginBottom: `0`}}/>
+   <img src={scott} alt="scotty"  style={{marginBottom: `0`}}/>
    </ImgDesktop>
    <ImgMob>
    <img src={scottMob} alt="scotty" />
