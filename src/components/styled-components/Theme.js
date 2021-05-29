@@ -6,7 +6,7 @@ import UntitledSans from '../../fonts/untitled-sans-reg.ttf'
 export const GlobalStyle = createGlobalStyle`
 * {
     margin: 0;
-    overflow: hidden;
+    
 }
 @font-face {
   font-family: 'Times';
@@ -20,6 +20,7 @@ export const GlobalStyle = createGlobalStyle`
     }
   body {
     color: #333333;
+    
 
   }
   h1 {
@@ -28,6 +29,7 @@ export const GlobalStyle = createGlobalStyle`
       font-size: 70px;
       line-height: .94;
       color: #333333;
+   
   }
 
   p {
