@@ -54,6 +54,7 @@ justify-content: space-between;
 @media screen and (max-width: 450px) {
 flex-direction: column;
 padding: 0;
+width: 100vw;
 }
 `
 
