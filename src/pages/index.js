@@ -51,14 +51,14 @@ const IndexPage = () => {
 export default IndexPage
 
 const PageContainer = styled.div`
-  height: ${props => props.pageHeiht} !important;
+  height: 100vh;
   width: 99vw;
   overflow: hidden;
   padding: 0;
   display: flex;
   justify-content: space-between;
   @media screen and (max-width: 450px) {
-    height: ${props => props.pageHeiht} !important;
+    height: ${props => props.height} !important;
     flex-direction: column;
     padding: 0;
     width: 100vw;
