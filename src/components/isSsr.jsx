@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const useIsSsr = () => {
+export const useIsSsr = () => {
   // we always start off in "SSR mode", to ensure our initial browser render
   // matches the SSR render
   const [isSsr, setIsSsr] = useState(true);
