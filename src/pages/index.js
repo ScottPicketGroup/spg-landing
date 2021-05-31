@@ -21,7 +21,7 @@ const IndexPage = () => {
     <React.Fragment>
       <GlobalStyle />
       <Seo title="Scott Picket Group Landing Page" />
-      <PageContainer height={pageHeight}>
+      <PageContainer height={`${pageHeight}px`}>
         <LeftContainer>
           <SignupContainer>
             <SignUp />
@@ -51,14 +51,14 @@ const IndexPage = () => {
 export default IndexPage
 
 const PageContainer = styled.div`
-  height: 100vh;
+  height: ${props => props.pageHeiht} !important;
   width: 99vw;
   overflow: hidden;
   padding: 0;
   display: flex;
   justify-content: space-between;
   @media screen and (max-width: 450px) {
-    height: 720px;
+    height: ${props => props.pageHeiht} !important;
     flex-direction: column;
     padding: 0;
     width: 100vw;
