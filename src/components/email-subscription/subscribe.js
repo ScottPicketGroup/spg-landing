@@ -138,6 +138,7 @@ const Input = styled.input`
 
   @media screen and (max-width: 450px) {
     height: 2.3rem;
+    margin-top: 0;
 }
 
   ::placeholder {
