@@ -71,8 +71,9 @@ justify-content: space-between;
 
 @media  (max-width: 450px) {
   order: 1;
-width: 100vw;
-padding: 1rem;
+width: 100%;
+padding: 1rem 1rem 2rem 1rem;
+flex-grow: 1;
 
 
 
@@ -83,7 +84,7 @@ const SignupContainer = styled.div`
 width: 88%;
 height: auto;
 @media screen and (max-width: 450px) {
-
+width: 100%;
 padding: 0;
 }
 `

@@ -137,7 +137,7 @@ const Input = styled.input`
   border-bottom: 1px solid ${props => (props.err ? "#CB0000" : "#153e35")};
 
   @media screen and (max-width: 450px) {
-    height: 3.3rem;
+    height: 2.3rem;
 }
 
   ::placeholder {
