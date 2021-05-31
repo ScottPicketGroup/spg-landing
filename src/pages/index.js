@@ -23,7 +23,7 @@ const IndexPage = () => {
   return (
     <React.Fragment>
       <GlobalStyle />
-      <Seo title="Scott Picket Group Landing Page" />
+      <Seo title="Scott Picket Group" />
       <PageContainer height={`${pageHeight}px`}>
         <LeftContainer>
           <SignupContainer>
@@ -81,7 +81,7 @@ const LeftContainer = styled.div`
   @media (max-width: 450px) {
     order: 1;
     width: 89%;
-    padding: 1rem 1rem 2rem 1rem;
+    padding: 1rem 1rem 2.5rem 1rem;
     flex-grow: 1;
   }
 `
