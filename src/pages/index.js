@@ -58,7 +58,7 @@ const PageContainer = styled.div`
   display: flex;
   justify-content: space-between;
   @media screen and (max-width: 450px) {
-    height: ${props => `${props.pageHeight}px`};
+    height: 720px;
     flex-direction: column;
     padding: 0;
     width: 100vw;
