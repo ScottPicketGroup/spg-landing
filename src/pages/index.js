@@ -10,7 +10,10 @@ import {GlobalStyle} from '../components/styled-components/Theme'
 import SPGLogo from "../images/spg-logo"
 import Instagram from "../components/email-subscription/Instagram"
 import Facebook from "../components/email-subscription/Facebook"
+import {useIsSsr} from '../components/isSsr'
 const IndexPage = () => {
+  const isSsr = useIsSsr();
+  if (isSsr) return null;
 const pageHeight = window.innerHeight 
 
 console.log(`pageHeight`, pageHeight)
