@@ -10,7 +10,12 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
+import logo from '../images/spg.png'
+import logoLight from '../images/spg-light.png'
 function Seo({ description, lang, meta, title }) {
+
+  
+
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -30,6 +35,7 @@ function Seo({ description, lang, meta, title }) {
 
   return (
     <Helmet
+      
       htmlAttributes={{
         lang,
       }}
@@ -69,7 +75,14 @@ function Seo({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+    >
+
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    <link rel="icon" href={logo} />
+} else {
+ <link rel="icon" href={logoLight} />
+}
+    </Helmet>
   )
 }
 

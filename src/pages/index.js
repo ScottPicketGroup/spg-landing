@@ -11,6 +11,9 @@ import SPGLogo from "../images/spg-logo"
 import Instagram from "../components/email-subscription/Instagram"
 import Facebook from "../components/email-subscription/Facebook"
 import { useIsSsr } from "../components/isSsr"
+import Helmet from 'react-helmet'
+
+
 const IndexPage = () => {
   const isSsr = useIsSsr()
   if (isSsr) return null
