@@ -71,7 +71,7 @@ justify-content: space-between;
 
 @media  (max-width: 450px) {
   order: 1;
-width: 100%;
+width: 89%;
 padding: 1rem 1rem 2rem 1rem;
 flex-grow: 1;
 
