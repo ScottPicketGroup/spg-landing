@@ -10,11 +10,15 @@ import {GlobalStyle} from '../components/styled-components/Theme'
 import SPGLogo from "../images/spg-logo"
 import Instagram from "../components/email-subscription/Instagram"
 import Facebook from "../components/email-subscription/Facebook"
-const IndexPage = () => (
+const IndexPage = () => {
+const pageHeight = window.innerHeight 
+
+console.log(`pageHeight`, pageHeight)
+return (
   <React.Fragment>
   <GlobalStyle />
     <Seo title="Scott Picket Group Landing Page" />
-  <PageContainer>
+  <PageContainer height={pageHeight}>
     <LeftContainer>
     <SignupContainer>
       <SignUp/>
@@ -40,7 +44,7 @@ const IndexPage = () => (
     </ImgContainer>
   </PageContainer>
   </React.Fragment>
-)
+)}
 
 export default IndexPage
 
@@ -53,6 +57,7 @@ padding: 0 ;
 display: flex;
 justify-content: space-between;
 @media screen and (max-width: 450px) {
+  height: ${props => `${props.pageHeight}px`};
 flex-direction: column;
 padding: 0;
 width: 100vw;
