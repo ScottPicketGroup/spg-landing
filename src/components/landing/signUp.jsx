@@ -24,7 +24,7 @@ margin-bottom: 1.15rem;
 const Heading = styled.h1`
 margin-bottom: 43px;
 @media screen and (max-width: 450px) {
-margin-bottom: 18px;
+display: none;
 }
 `
 

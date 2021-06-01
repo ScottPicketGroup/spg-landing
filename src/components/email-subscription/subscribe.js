@@ -102,6 +102,9 @@ const SubContainer = styled.div`
 `
 const FormFields = styled.div`
   width: 62.5%;
+  @media screen and (max-width: 450px) {
+width: 100%;
+}
 `
 const SocialsContainer = styled.div`
   display: flex;
@@ -118,6 +121,11 @@ const SignUp = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: 450px) {
+flex-direction: column;
+justify-content: center;
+padding: 0 18px;
+}
 `
 const Label = styled.p`
   font-family: UntitledSansRegular;
@@ -139,8 +147,7 @@ const Input = styled.input`
   border-bottom: 1px solid ${props => (props.err ? "#CB0000" : "#153e35")};
 
   @media screen and (max-width: 450px) {
-    height: 2.3rem;
-    margin-top: 0;
+
   }
 
   ::placeholder {
@@ -188,8 +195,12 @@ const SignUpSubmit = styled.button`
     color: ${props => (props.err ? "beige" : "beige")};
   }
   @media screen and (max-width: 450px) {
-    font-size: 1rem !important;
-    padding: 0.5rem 2.2rem;
+    font-size: 12px !important;
+    width: 126px;
+    height: 36px;
+
+    align-self: flex-start;
+    
     margin-top: 1.75rem;
     margin-bottom: 2.25rem;
   }

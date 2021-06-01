@@ -3,7 +3,7 @@ import styled from "styled-components"
 import SignUp from "../components/landing/signUp"
 import Subscribe from "../components/email-subscription/subscribe"
 import scott from "../images/scott.jpg"
-import scottMob from "../images/scottMob.png"
+
 import Img from "gatsby-image"
 import Seo from "../components/seo"
 import { GlobalStyle } from "../components/styled-components/Theme"
@@ -43,9 +43,7 @@ const IndexPage = () => {
           <ImgDesktop>
             <img src={scott} alt="scotty" style={{ marginBottom: `0` }} />
           </ImgDesktop>
-          <ImgMob>
-            <img src={scottMob} alt="scotty" style={{ width: `100vw` }} />
-          </ImgMob>
+         
           <Intro/>
           <Subscribe />
         </ImgContainer>
@@ -85,8 +83,8 @@ const LeftContainer = styled.div`
 
   @media (max-width: 450px) {
     order: 1;
-    width: 89%;
-    padding: 1rem 1rem 2.5rem 1rem;
+    width: 100%;
+    padding: 0rem 18px 56px 18px;
     flex-grow: 1;
   }
 `
@@ -117,15 +115,11 @@ const ImgDesktop = styled.div`
     max-height: 100%;
   }
   @media screen and (max-width: 450px) {
-    display: none;
+    width: 100vw;
   }
 `
 
-const ImgMob = styled.div`
-  @media screen and (min-width: 451px) {
-    display: none;
-  }
-`
+
 
 const LogoContainer = styled.div`
   display: flex;
