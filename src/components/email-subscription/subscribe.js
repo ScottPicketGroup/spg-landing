@@ -1,8 +1,8 @@
 import React, { useState } from "react"
 import styled from "styled-components"
 
-import Facebook from './Facebook'
-import Instagram from './Instagram'
+import Facebook from "./Facebook"
+import Instagram from "./Instagram"
 const Subscribe = () => {
   const [email, setEmail] = useState("")
   const [emailErr, setEmailErr] = useState(false)
@@ -24,7 +24,7 @@ const Subscribe = () => {
         "Authorization",
         "Bearer 25183d2e-1266-4207-a9d3-a5d9422d94b0"
       )
-      myHeaders.append("Timestamp", {timestamp})
+      myHeaders.append("Timestamp", { timestamp })
       myHeaders.append("Content-Type", "application/json")
 
       var raw = JSON.stringify({
@@ -50,14 +50,16 @@ const Subscribe = () => {
     } else {
       setEmailErr(true)
     }
+    console.log(`object`)
   }
 
   return (
     <SubContainer>
       {signUp ? (
         <SignUp onSubmit={handleSubmit}>
-          <Label>EMAIL ADDRESS</Label>
-          <form>
+          <FormFields>
+            <Label>EMAIL ADDRESS</Label>
+
             <Input
               placeholder="Please enter your email address"
               name="email"
@@ -66,21 +68,20 @@ const Subscribe = () => {
               onChange={handleChange}
               err={emailErr}
             />
-           <BottomContainer>
-            <SignUpSubmit err={emailErr} type="submit">
-              SUBSCRIBE
-            </SignUpSubmit>
-            <SocialsContainer>
+          </FormFields>
+
+          <SignUpSubmit err={emailErr} type="submit" onClick={handleSubmit}>
+            SUBSCRIBE
+          </SignUpSubmit>
+          {/* <SocialsContainer>
             <Instagram/>
               <Facebook/>
              
-            </SocialsContainer>
-            </BottomContainer>
-          </form>
+            </SocialsContainer> */}
         </SignUp>
       ) : (
         <>
-          <p>Thank you</p>
+          <p>Thank you</p> <br/>
           <p>You are now signed up to our mailing list.</p>
         </>
       )}
@@ -92,97 +93,99 @@ export default Subscribe
 
 const SubContainer = styled.div`
   width: 100%;
-
+  display: flex;
   overflow: visible;
-  margin-top: 1rem;
-  @media screen and (max-width: 450px) {
-margin-top: 0;
-}
  
+  @media screen and (max-width: 450px) {
+    margin-top: 0;
+  }
 `
-const BottomContainer = styled.div`
-width: 100%;
-display: flex;
-justify-content: space-between;
+const FormFields = styled.div`
+  width: 62.5%;
 `
 const SocialsContainer = styled.div`
-display: flex;
-align-self: flex-end;
-margin-bottom: -.4rem;
-@media screen and (max-width: 450px) {
-display: none;
-}
-` 
+  display: flex;
+  align-self: flex-end;
+  margin-bottom: -0.4rem;
+  @media screen and (max-width: 450px) {
+    display: none;
+  }
+`
 
 const SignUp = styled.div`
+ margin-bottom: 3.5rem;
   font-size: 0.75rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 `
 const Label = styled.p`
-  font-size: 1.1rem;
-  
+  font-family: UntitledSansRegular;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 
   @media screen and (max-width: 450px) {
-    font-size: .9rem !important;
-  margin-bottom: -.3rem;
+    font-size: 12px !important;
+    line-height: 1.33;
+    margin-bottom: -0.3rem;
   }
 `
 const Input = styled.input`
   width: 100%;
-  height: 3.1rem;
   background: transparent;
   border: none;
-  margin-top: -.5rem;
-  font-size: 1rem;
-  line-height: none;
+  height: 52px;
   border-bottom: 1px solid ${props => (props.err ? "#CB0000" : "#153e35")};
 
   @media screen and (max-width: 450px) {
     height: 2.3rem;
     margin-top: 0;
-}
+  }
 
   ::placeholder {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.2rem;
-   
-    color: ${props => props.err ? '#CB0000' : 'rgba(21, 62, 53, 50%)'};
+    font-family: UntitledSansLight;
+    font-size: 20px;
+    line-height: 1.2;
+    color: ${props => (props.err ? "#CB0000" : "rgba(21, 62, 53, 50%)")};
     @media screen and (max-width: 450px) {
-      font-size: 1rem;
-    
+      font-size: 12px;
+      line-height: 1.33;
     }
   }
   :focus {
     outline: none;
     background: #fdf9ee;
-   
-    height: 3rem;
+
+    
     font-size: 150%;
   }
   :valid {
-    font-size: 1rem;
-   
+    font-size: 12px;
   }
   ::-moz-focus-outer {
     color: white;
   }
   @media screen and (max-width: 450px) {
-    padding: .75rem 0;
+    padding: 0.75rem 0;
   }
 `
 
 const SignUpSubmit = styled.button`
   background: none;
-
-  padding: 0.64rem 4.5rem;
+  width: 15%; 
+  height: 42px;
+  align-self: flex-end;
+  
   border: 1px solid ${props => (props.err ? "#CB0000" : "#153e35")};
   color: ${props => (props.err ? "#CB0000" : "#153e35")};
-  margin-top: 2.6rem;
-  font-size: .95rem;
+  
+  font-size: 16px ;
   transition: all 0.2s ease;
   :hover {
     opacity: ${props => (props.err ? "1" : ".75")};
-    background: ${props => props.err ? "#CB0000" : "#333333"};
-    color: ${props => (props.err ? "beige" : "beige")}; 
+    background: ${props => (props.err ? "#CB0000" : "#333333")};
+    color: ${props => (props.err ? "beige" : "beige")};
   }
   @media screen and (max-width: 450px) {
     font-size: 1rem !important;
@@ -191,6 +194,7 @@ const SignUpSubmit = styled.button`
     margin-bottom: 2.25rem;
   }
   p {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
   }
 `

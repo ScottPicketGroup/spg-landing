@@ -3,8 +3,8 @@ import styled from 'styled-components'
 const SignUp = () => {
     return (
         <SignUpContainer>
-           <Heading>Coming Soon</Heading>
-           <Para>Sign up to our newsletter for news, stories and invitations to the things we love to share and enjoy from Scott Pickett Group.</Para>
+           <Heading>COMING SOON</Heading>
+           
         </SignUpContainer>
     )
 }

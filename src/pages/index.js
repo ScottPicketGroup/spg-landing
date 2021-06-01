@@ -2,7 +2,7 @@ import * as React from "react"
 import styled from "styled-components"
 import SignUp from "../components/landing/signUp"
 import Subscribe from "../components/email-subscription/subscribe"
-import scott from "../images/scott.png"
+import scott from "../images/scott.jpg"
 import scottMob from "../images/scottMob.png"
 import Img from "gatsby-image"
 import Seo from "../components/seo"
@@ -12,6 +12,7 @@ import Instagram from "../components/email-subscription/Instagram"
 import Facebook from "../components/email-subscription/Facebook"
 import { useIsSsr } from "../components/isSsr"
 import Helmet from 'react-helmet'
+import Intro from "../components/landing/intro"
 
 
 const IndexPage = () => {
@@ -28,14 +29,14 @@ const IndexPage = () => {
         <LeftContainer>
           <SignupContainer>
             <SignUp />
-            <Subscribe />
+           
           </SignupContainer>
           <LogoContainer>
             <SPGLogo />
-            <SocialsContainer>
+            {/* <SocialsContainer>
               <Instagram />
               <Facebook />
-            </SocialsContainer>
+            </SocialsContainer> */}
           </LogoContainer>
         </LeftContainer>
         <ImgContainer>
@@ -45,7 +46,10 @@ const IndexPage = () => {
           <ImgMob>
             <img src={scottMob} alt="scotty" style={{ width: `100vw` }} />
           </ImgMob>
+          <Intro/>
+          <Subscribe />
         </ImgContainer>
+        
       </PageContainer>
     </React.Fragment>
   )
@@ -56,8 +60,8 @@ export default IndexPage
 const PageContainer = styled.div`
   height: 100vh;
   width: 99vw;
-  overflow: hidden;
-  padding: 0;
+  /* overflow: hidden; */
+  padding: 0 5.25rem;
   display: flex;
   justify-content: space-between;
   @media screen and (max-width: 450px) {
@@ -70,10 +74,11 @@ const PageContainer = styled.div`
 `
 
 const LeftContainer = styled.div`
-  height: auto;
-  padding-bottom: 66px;
+  height: 100vh;
+  
   padding-left: 84px;
-  width: 48%;
+  padding-bottom: 56px;
+  width: 33%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -96,7 +101,9 @@ const SignupContainer = styled.div`
 `
 
 const ImgContainer = styled.div`
-  width: 52%;
+  width: 66%;
+  display: flex;
+  flex-direction: column;
   @media screen and (max-width: 450px) {
     width: 100vw;
     max-height: 30vh;
