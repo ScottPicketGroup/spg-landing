@@ -2,7 +2,7 @@ import * as React from "react"
 import styled from "styled-components"
 import SignUp from "../components/landing/signUp"
 import Subscribe from "../components/email-subscription/subscribe"
-import scott from "../images/scott.jpg"
+import scott from "../images/scott1.jpg"
 
 import Img from "gatsby-image"
 import Seo from "../components/seo"

@@ -14,7 +14,9 @@ const Intro = () => {
 export default Intro
 
 const MobContainer = styled.div`
-padding: 56px 18px 0 18px;
+@media screen and (max-width: 450px) {
+    padding: 56px 18px 0 18px;
+}
 `
 
 const Heading = styled.h1`
