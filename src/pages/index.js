@@ -72,7 +72,7 @@ const PageContainer = styled.div`
 `
 
 const LeftContainer = styled.div`
-  height: 100vh;
+  
   
 
   padding-bottom: 56px;
