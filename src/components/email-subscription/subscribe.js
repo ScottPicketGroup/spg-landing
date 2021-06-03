@@ -148,7 +148,7 @@ const Input = styled.input`
   border-bottom: 1px solid ${props => (props.err ? "#CB0000" : "#153e35")};
 
   @media screen and (max-width: 450px) {
-
+height: 1rem;
   }
 
   ::placeholder {
@@ -157,7 +157,7 @@ const Input = styled.input`
     line-height: 2.5;
     color: ${props => (props.err ? "#CB0000" : "rgba(21, 62, 53, 50%)")};
     @media screen and (max-width: 450px) {
-      font-size: 12px;
+      font-size: 1rem;
       line-height: 1.33;
     }
   }
