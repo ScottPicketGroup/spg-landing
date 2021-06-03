@@ -80,10 +80,10 @@ const Subscribe = () => {
             </SocialsContainer> */}
         </SignUp>
       ) : (
-        <>
+        <ThankYou>
           <p>Thank you</p> <br/>
           <p>You are now signed up to our mailing list.</p>
-        </>
+        </ThankYou>
       )}
     </SubContainer>
   )
@@ -210,4 +210,8 @@ const SignUpSubmit = styled.button`
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
       sans-serif;
   }
+`
+const Thankyou = styled.div`
+display: flex;
+flex-direction: column;
 `
