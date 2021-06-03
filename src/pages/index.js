@@ -57,7 +57,7 @@ export default IndexPage
 
 const PageContainer = styled.div`
   height: 100vh;
-  width: 99vw;
+
   overflow: hidden;
   padding: 0 5.25rem;
   display: flex;
