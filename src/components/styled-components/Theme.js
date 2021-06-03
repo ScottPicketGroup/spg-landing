@@ -49,7 +49,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   h1 {
       font-family: UntitledSansMedium;
-      font-size: 28px;
+      font-size: 1.24rem;
       line-height: 1;
       color: #333333;
    
@@ -57,14 +57,14 @@ export const GlobalStyle = createGlobalStyle`
 
   p {
       font-family: UntitledSansLight;
-      font-size: 36px;
+      font-size: 1.59rem;
       line-height: 1.22;
       color: #333333;
       margin-bottom: 0;
   }
   button {
       font-family: UntitledSansRegular;
-      font-size: 1rem;
+      font-size: .71rem;
       line-height: 1;
       letter-spacing: 20;
       color: #333333;
@@ -72,12 +72,12 @@ export const GlobalStyle = createGlobalStyle`
 
   @media screen and (max-width: 450px) {
     h1 {
-        font-size: 20px;
+        font-size: 1.25rem;
         line-height: 1.2;
         
     }
     p {
-        font-size: 1rem;
+        font-size: .71rem;
         line-height: 1.25;
     }
     

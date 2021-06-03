@@ -130,7 +130,7 @@ padding: 0 18px;
 const Label = styled.p`
   font-family: UntitledSansRegular;
   font-size: 20px;
-  line-height: 1.2;
+  line-height: .7;
   letter-spacing: 0.02em;
 
   @media screen and (max-width: 450px) {
@@ -143,7 +143,8 @@ const Input = styled.input`
   width: 100%;
   background: transparent;
   border: none;
-  height: 52px;
+  height: 3rem;
+  
   border-bottom: 1px solid ${props => (props.err ? "#CB0000" : "#153e35")};
 
   @media screen and (max-width: 450px) {
@@ -153,7 +154,7 @@ const Input = styled.input`
   ::placeholder {
     font-family: UntitledSansLight;
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 2.5;
     color: ${props => (props.err ? "#CB0000" : "rgba(21, 62, 53, 50%)")};
     @media screen and (max-width: 450px) {
       font-size: 12px;
@@ -162,13 +163,14 @@ const Input = styled.input`
   }
   :focus {
     outline: none;
-    background: #fdf9ee;
-
+    background: transperant;
+    font-family: UntitledSansLight;
     
     font-size: 150%;
   }
   :valid {
-    font-size: 12px;
+    font-size: 20px;
+    font-family: UntitledSansLight;
   }
   ::-moz-focus-outer {
     color: white;

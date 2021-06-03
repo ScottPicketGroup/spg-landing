@@ -58,7 +58,7 @@ export default IndexPage
 const PageContainer = styled.div`
   height: 100vh;
   width: 99vw;
-  /* overflow: hidden; */
+  overflow: hidden;
   padding: 0 5.25rem;
   display: flex;
   justify-content: space-between;
@@ -74,7 +74,7 @@ const PageContainer = styled.div`
 const LeftContainer = styled.div`
   height: 100vh;
   
-  padding-left: 84px;
+
   padding-bottom: 56px;
   width: 33%;
   display: flex;
