@@ -153,7 +153,7 @@ height: 1.5rem;
 
   ::placeholder {
     font-family: UntitledSansLight;
-    font-size: 1rem;
+    font-size: 20px;
     line-height: 2.5;
     color: ${props => (props.err ? "#CB0000" : "rgba(21, 62, 53, 50%)")};
     @media screen and (max-width: 450px) {
