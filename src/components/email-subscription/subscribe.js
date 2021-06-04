@@ -146,14 +146,14 @@ const Input = styled.input`
   height: 3rem;
   
   border-bottom: 1px solid ${props => (props.err ? "#CB0000" : "#153e35")};
-
+  border-radius: 0;
   @media screen and (max-width: 450px) {
 height: 1.5rem;
   }
 
   ::placeholder {
     font-family: UntitledSansLight;
-    font-size: 20px;
+    font-size: 1rem;
     line-height: 2.5;
     color: ${props => (props.err ? "#CB0000" : "rgba(21, 62, 53, 50%)")};
     @media screen and (max-width: 450px) {
@@ -206,12 +206,9 @@ const SignUpSubmit = styled.button`
     margin-top: 1.75rem;
     margin-bottom: 2.25rem;
   }
-  p {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-      sans-serif;
-  }
+  
 `
-const Thankyou = styled.div`
+const ThankYou = styled.div`
 display: flex;
 flex-direction: column;
 `
