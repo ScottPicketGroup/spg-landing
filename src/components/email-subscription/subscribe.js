@@ -129,7 +129,7 @@ padding: 0 18px;
 `
 const Label = styled.p`
   font-family: UntitledSansRegular;
-  font-size: 20px;
+  font-size: 1rem;
   line-height: .7;
   letter-spacing: 0.02em;
 
