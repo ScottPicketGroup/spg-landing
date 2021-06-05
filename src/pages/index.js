@@ -2,7 +2,7 @@ import * as React from "react"
 import styled from "styled-components"
 import SignUp from "../components/landing/signUp"
 import Subscribe from "../components/email-subscription/subscribe"
-import scott from "../images/scott1.jpg"
+import scott from "../images/scottHolding.png"
 
 import Img from "gatsby-image"
 import Seo from "../components/seo"
@@ -102,6 +102,7 @@ const ImgContainer = styled.div`
   width: 66%;
   display: flex;
   flex-direction: column;
+  height: 40vw;
   @media screen and (max-width: 450px) {
     width: 100vw;
     max-height: 30vh;
@@ -111,8 +112,8 @@ const ImgContainer = styled.div`
 
 const ImgDesktop = styled.div`
   img {
-    max-width: 100%;
-    max-height: 100%;
+    /* max-width: 100%;
+    max-height: 100%; */
   }
   @media screen and (max-width: 450px) {
     width: 100vw;

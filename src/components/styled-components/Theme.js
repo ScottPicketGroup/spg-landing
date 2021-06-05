@@ -57,7 +57,7 @@ export const GlobalStyle = createGlobalStyle`
 
   p {
       font-family: UntitledSansLight;
-      font-size: 1.59rem;
+      font-size: 1.49rem;
       line-height: 1.22;
       color: #333333;
       margin-bottom: 0;

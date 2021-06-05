@@ -27,8 +27,8 @@ display: none;
 `
 
 const Para = styled.p`
-margin-top: 2rem;
-margin-bottom: 2rem;
+margin-top: 1.26rem;
+margin-bottom: 1.5rem;
 @media screen and (max-width: 450px) {
 margin-top: 0;
 margin-bottom: 1.5rem;
