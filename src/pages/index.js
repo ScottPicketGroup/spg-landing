@@ -112,8 +112,8 @@ const ImgContainer = styled.div`
 
 const ImgDesktop = styled.div`
   img {
-    /* max-width: 100%;
-    max-height: 100%; */
+    max-width: 100%;
+   /*  max-height: 100%; */
   }
   @media screen and (max-width: 450px) {
     width: 100vw;
